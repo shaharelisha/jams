@@ -1,0 +1,102 @@
+body {
+    background-color: #CFD699;
+    font-family: Helvetica, Verdana, sans-serif;
+	color: #665544;
+    padding: 20px;}
+
+logo {
+    width: 2067px;
+    height: 686px;
+    margin-top: 0px;
+    align-content: center}
+
+h1 {
+    padding: 12px;
+	font-size: 4em;
+	text-align: center;}
+
+p {
+    padding: 12px;
+	line-height: 1.5em;
+	text-align: left;}
+
+.logoHeader {
+    height: 120px;
+    font-size: 4em;
+    color: #A73E5C;
+    vertical-align: left;
+    text-align: center; 
+    margin-left: 30px;
+}
+
+.column {
+    float: inherit;
+	width: 620px;
+	margin: 10px;
+    background-color: #E9E9DF;
+    border: 2px solid #9DA563;
+    border-radius: 25px;
+}
+
+
+}
+
+.registration {
+    float: left;
+    clear: left;
+    
+    
+}
+
+.main { 
+    width: 1000px;
+    margin:100px auto;
+    align-content: center;
+    
+    align-self: center;
+    }
+
+footer {
+       
+}
+
+table {
+    border-spacing: 5px;
+}
+
+ul {
+    width: 800px;
+    padding: 20px;
+    margin: 0px auto 0px auto;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    background-color: #E9E9DF;}
+
+li {
+    display: inline;
+	margin: 0px 7px;}
+				
+a {
+    color: #FF9494;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px 5px 18px;}
+				
+a:hover, a.on {
+    color: #A73E5C;
+    background-color: #E9E9DF;
+    font-size: 1.5em;}
+
+<!-->
+#CFD699
+#FFA3A3 not this
+#FF9494
+#B26868
+#E9E9DF
+#F1F8FF
+
+#F4FCDE
+
+#F6CED8
+</--> 

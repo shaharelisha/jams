@@ -1,0 +1,69 @@
+<?php
+session_start()
+?>
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset=utf-8>
+    <meta name=description content="Jams">
+    <meta name="keywords" content="Jams, fruit, __">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Jams</title>
+</head>
+
+<body>
+    <header>
+        <br />
+    </header>
+    <h1 class="logoHeader">Roots & Wings</h1>
+    
+     <ul id="navigation">
+        <li><a href="index.html">Home</a>
+        </li>
+        <li><a href="products.html">Products</a>
+        </li>
+        <li><a href="basket.html" class="on">Basket</a>
+        </li>
+        <li><a href="contact.html">Contact</a>
+        </li>
+         
+        <?php
+            if (isset($_COOKIE['email'])) {
+                echo "<li><a href = 'account.html'>Account</a></li>";
+                echo "<li><a href = 'logout.php'>Logout</a></li>";
+            }
+            else {
+                echo "<li><a href = 'register.html'>Register</a></li>";
+                echo "<li><a href = 'login.html'>Login</a></li>";
+            }
+        ?>
+    </ul>
+
+    <!-- Main page content here -->
+
+    <div class="main">
+        <?php
+            include "main.php";
+            $oid = -1;
+            if (isset($_GET["oid"])) {
+                $oid = $_GET["oid"];              
+                display_order($oid);
+            }
+
+        ?>    
+    </div>
+
+    
+<footer>
+    <br>
+    <p>© Jams 2015. All Rights Reserved. Jams is a registered trade mark of Food Revolution Limited. </p>
+    
+    </footer>
+
+
+</body>
+
+</html>

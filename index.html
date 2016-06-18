@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset=utf-8>
+    <meta name=description content="Jams">
+    <meta name="keywords" content="Jams, fruit, __">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Jams</title>
+</head>
+
+<body>
+    <header>
+        <br />
+    </header>
+    <h1 class="logoHeader">Roots & Wings</h1>
+    
+     <ul id="navigation">
+        <li><a href="index.html" class="on">Home</a>
+        </li>
+        <li><a href="products.html">Products</a>
+        </li>
+        <li><a href="basket.html">Basket</a>
+        </li>
+        <li><a href="contact.html">Contact</a>
+        </li>
+         
+        <?php
+            session_start();
+            if (isset($_COOKIE['fname'])) {
+                echo "<li><a href = 'account.html'>Account</a></li>";
+                echo "<li><a href = 'logout.php'>Logout</a></li>";
+            }   
+            else {
+                echo "<li><a href = 'register.html'>Register</a></li>";
+                echo "<li><a href = 'login.html'>Login</a></li>";
+            }
+        ?>
+         
+    </ul>
+    
+    
+<div class="image">
+            <img src="Images/RootsWings_Preserves_RGB.jpg" alt="Jams Image" height="411.6px" width="1240.2px">    
+        </div>
+ 
+    
+<div class="main">
+    
+    
+    <div class="text">
+    <p>Welcome to Roots & Wings, an organic and natural brand for all of the family. Our products are made from the best ingredients, carefully and ethically sourced and produced by craftsmen to our recipes across the UK so that you can enjoy delicious meals with your friends and family.</p>
+    
+    <p>Our award winning products are available in good independent stores, major grocery outlets and online.</p>
+        </div>
+        
+    <div class="registration">
+            <p>Register for our newsletter</p>
+            <form action="subscribe.php" method="get">
+                <label>Email:</label>
+                <input type="text" name="email">
+                <br>
+                <input type="submit" value="Subcribe">
+            </form>
+        </div>
+    </div>
+    
+<footer>
+<br>
+    <p>© Jams 2015. All Rights Reserved. Jams is a registered trade mark of Food Revolution Limited. </p>
+    
+    </footer>
+    
+</body>
+    
+</html>
+
+

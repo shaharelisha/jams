@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset=utf-8>
+    <meta name=jams content="Roots & Wings">
+    <meta name="keywords" content="Jams, fruit, roots&wings, blackcurrant, raspberry, orange, lemon, strawberry, apricot">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Jams</title>
+</head>
+
+<body>
+    
+    <header>
+        <br />
+        
+    </header>
+  
+    <h1 class="logoHeader">Roots & Wings</h1>
+    
+     <ul id="navigation">
+        <li><a href="index.html" >Home</a>
+        </li>
+        <li><a href="products.html">Products</a>
+        </li>
+        <li><a href="basket.html">Basket</a>
+        </li>
+        <li><a href="contact.html" class="on">Contact</a>
+        </li>
+         
+        <?php
+        
+        session_start();
+        if (isset($_COOKIE['email'])){
+            echo "<li><a href = 'account.html'>Account</a></li>";
+            echo "<li><a href = 'logout.php'>Logout</a></li>";
+        }
+        else {
+            echo "<li><a href = 'register.html'>Register</a></li>";
+            echo "<li><a href = 'login.html'>Login</a></li>";
+        }
+        ?>
+    </ul>
+ 
+    
+<div class="main">
+
+        <div class="column">
+            <p> If you have any questions regarding our jams, please do not hesitate to contact us!</p>
+            <p> Tel: 07478952796</p>
+            <p> Email: rootsandwings@jams.com</p>
+        </div>
+
+    
+    <div class="registration">
+            <p>Register for our newsletter</p>
+            <form action="subscribe.php" method="get">
+                <label>Email:</label>
+                <input type="text" name="email">
+                <br>
+                <input type="submit" value="Subcribe">
+            </form>
+        </div>
+    </div>
+    
+<footer>
+    <br>
+    <p>© Jams 2015. All Rights Reserved. Jams is a registered trade mark of Food Revolution Limited. </p>
+    
+    </footer>
+    
+</body>
+    
+</html>
+
+

@@ -1,0 +1,105 @@
+body {
+    background-color: #FBF7E6;
+    font-family: Lucida Sans Unicode, sans-serif;
+	color: #665544;
+    padding: 20px;}
+
+
+.logoHeader {
+    text-align: left;  
+    color: #A73E5C;
+    margin-top: -50px;
+    
+}
+
+
+p {
+    padding: 12px;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+
+.image {
+    margin-left: -80px;
+}
+
+.text {
+    margin-top: -150px;
+}
+
+footer {
+   margin-bottom: -20px;
+    font-size: 13px;
+}
+
+table {
+    border-spacing: 10px;
+    margin-left: 100px;
+    margin-top: -40px;
+}
+
+th {
+    font-size: 20px;   
+}
+
+.changepass {
+    margin-left: 90px;   
+}
+
+
+.column {
+    float: inherit;
+	width: 620px;
+	margin: 10px;
+    background-color: #FFFFFF;
+    border: 2px solid #9DA563;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 170px;
+    margin-top: -50px; 
+}
+
+.registration {
+    
+    margin-bottom: -90px;
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+.column1of2 {
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+
+
+.main { 
+    width: 1000px;
+    margin:100px auto;
+    }
+
+ul {
+    width: 800px;
+    padding: 20px;
+    margin: -20px auto 0px auto;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    }
+
+li {
+    display: inline;
+	margin: 0px 7px;}
+				
+a {
+    color: #FF9494;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px 5px 18px;}
+				
+a:hover, a.on {
+    color: #A73E5C;
+    
+    }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset=utf-8>
+    <meta name=description content="Jams">
+    <meta name="keywords" content="Jams, fruit, __">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Jams</title>
+</head>
+
+<body>
+    <header>
+        <br />
+    </header>
+    <h1 class="logoHeader">Roots & Wings</h1>
+  
+    
+     <ul id="navigation">
+        <li><a href="index.html">Home</a>
+        </li>
+        <li><a href="products.html">Products</a>
+        </li>
+        <li><a href="basket.html">Basket</a>
+        </li>
+        <li><a href="contact.html">Contact</a>
+        </li>
+         
+        <?php
+            if (isset($_COOKIE['email'])) {
+                echo "<li><a href = 'account.html'>Account</a></li>";
+                echo "<li><a href = 'logout.php'>Logout</a></li>";
+            }
+            else {
+                echo "<li><a href = 'register.html'>Register</a></li>";
+                echo "<li><a href = 'login.html'  class='on'>Login</a></li>";
+            }
+        ?>
+         
+    </ul>
+    
+    
+
+ 
+    
+<div class="main">
+    
+    <div class="registration">
+            <p>Login to your account</p>
+            <form action="login.php" method="post">
+                <p><label>Email:</label>
+                    <input type="text" name="email"/></p>
+                
+                <p><label>Password:</label>
+                    <input type="password" name="pass" /></p>
+            
+                <p><input type="submit" value="Log In" /></p>
+            </form>
+        </div>
+    </div>
+    
+    
+    <footer>
+    <br>
+    <p>© Jams 2015. All Rights Reserved. Jams is a registered trade mark of Food Revolution Limited. </p>
+    
+    </footer>
+</body>
+    
+</html>
+
+

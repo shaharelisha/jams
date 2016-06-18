@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset=utf-8>
+    <meta name=description content="Jams">
+    <meta name="keywords" content="Jams, fruit, __">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Jams</title>
+</head>
+
+<body>
+    <header>
+        
+        <h1 class="logoHeader">Roots & Wings</h1>
+    </header>
+    <h2></h2>
+    
+     <ul id="navigation">
+        <li><a href="index.html" >Home</a>
+        </li>
+        <li><a href="products.html">Products</a>
+        </li>
+        <li><a href="basket.html">Basket</a>
+        </li>
+        <li><a href="contact.html" >Contact</a>
+        </li>
+         
+        <?php
+        
+        session_start();
+        if (isset($_COOKIE['email'])){
+            echo "<li><a href = 'account.html'>Account</a></li>";
+            echo "<li><a href = 'logout.php'>Logout</a></li>";
+        }
+        else {
+            echo "<li><a href = 'register.html' class='on'>Register</a></li>";
+            echo "<li><a href = 'login.html'>Login</a></li>";
+        }
+        ?>
+    </ul>
+
+
+    <!-- Main page content here -->
+
+    <div class="registration">
+        <div class="column1of2">
+            
+        <form action="register.php" method="post">
+            <p><label>Email address:</label><input type="text" name="email" /></p>
+            <p><label>First Name:</label><input type="text" name="fname" /></p>
+            <p><label>Surname:</label> <input type="text" name="sname" /> </p>
+            <p><label>Post Code:</label> <input type="text" name="pcode" /></p>
+            <p><label>Password:</label> <input type="password" name="pass" /></p>
+            <p><input type="submit" value="Register" /> </p>
+        </form>
+        </div>
+        
+    </div>
+
+ 
+
+</body>
+  <footer>
+<br />
+      <br />
+    <p>© Jams 2015. All Rights Reserved. Jams is a registered trade mark of Food Revolution Limited. </p>
+    
+    </footer>
+
+</html>
